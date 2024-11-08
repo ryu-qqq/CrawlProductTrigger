@@ -1,5 +1,7 @@
 package com.ryuqq.setof.lamda;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 public class KasinaCrawlRawData implements CrawlRawData {
 
     private KasinaItems items;
@@ -12,6 +14,7 @@ public class KasinaCrawlRawData implements CrawlRawData {
         this.items = items;
     }
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class KasinaItems {
         private long productNo;
 

@@ -1,5 +1,7 @@
 package com.ryuqq.setof.lamda;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 public class MustItCrawlRawData implements CrawlRawData {
 
     private MustItItems items;
@@ -12,6 +14,7 @@ public class MustItCrawlRawData implements CrawlRawData {
         this.items = items;
     }
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class MustItItems {
         private long itemNo;
 
