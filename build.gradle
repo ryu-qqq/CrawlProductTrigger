@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+}
+
+allprojects {
+    group = "${projectGroup}"
+    version = "${applicationVersion}"
+    sourceCompatibility = project.javaVersion
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+
+subprojects {
+    apply plugin: 'java-library'
+}

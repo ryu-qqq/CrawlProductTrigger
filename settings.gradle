@@ -1,0 +1,10 @@
+pluginManagement {
+    plugins {
+
+    }
+}
+
+
+rootProject.name = 'CrawlingTrigger'
+
+include 'domain:core-crawling'
