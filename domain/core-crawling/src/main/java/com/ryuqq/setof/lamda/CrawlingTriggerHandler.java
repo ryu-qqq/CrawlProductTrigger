@@ -75,7 +75,7 @@ public class CrawlingTriggerHandler implements RequestHandler<S3Event, String> {
 
     private void sendToServer(List<CrawlProductInsertRequestDto> requestDtos, Context context) throws Exception {
 
-        String serverUri = "https://your-server-host/api/v1/site/crawl/product";
+        String serverUri = "https://0efd-61-73-26-214.ngrok-free.app/api/v1/site/crawl/product";
 
         String jsonPayload = objectMapper.writeValueAsString(requestDtos);
 
